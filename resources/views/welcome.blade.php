@@ -221,8 +221,8 @@
     </div>
     <!-- fact area end -->
     <!-- team-2 area start -->
-    {{-- <section class="rr-team-2-area rr-team-bg-color pt-110 pb-90 p-relative fix"
-       data-background="assets/img/team/bg.jpg">
+    <section class="rr-team-2-area rr-team-bg-color pt-110 pb-90 p-relative fix"
+       data-background="{{ asset('assets/img/bg.jpg') }}">
        <div class="container">
           <div class="row">
              <div class="col-xl-12 col-12">
@@ -235,263 +235,90 @@
              </div>
           </div>
           <div class="row gx-30">
-             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 wow rrfadeUp mb-30" data-wow-duration=".9s"
-                data-wow-delay=".3s">
-                <div class="rr-team-2-item text-center p-relative">
-                   <div class="rr-team-2-thumb">
-                      <img src="assets/img/team/team-4.jpg" alt="">
-                   </div>
-                   <div class="rr-team-2-content">
-                      <h4 class="rr-team-2-title"><a href="team-details.html">Jenefer Abram</a></h4>
-                      <span>Makeup Artist</span>
-                      <div class="rr-team-2-social">
-                         <a href="#"><svg width="11" height="18" viewBox="0 0 11 18" fill="none"
-                               xmlns="http://www.w3.org/2000/svg">
-                               <path
-                                  d="M10 1H7.54545C6.46048 1 5.41994 1.42143 4.65274 2.17157C3.88555 2.92172 3.45455 3.93913 3.45455 5V7.4H1V10.6H3.45455V17H6.72727V10.6H9.18182L10 7.4H6.72727V5C6.72727 4.78783 6.81347 4.58434 6.96691 4.43431C7.12035 4.28429 7.32846 4.2 7.54545 4.2H10V1Z"
-                                  stroke="#54595F" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round" />
-                            </svg>
-                         </a>
-                         <a href="#"><svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                               xmlns="http://www.w3.org/2000/svg">
-                               <path
-                                  d="M19 1.00897C18.2165 1.61128 17.349 2.07195 16.4309 2.37324C15.9382 1.75576 15.2833 1.3181 14.5548 1.11947C13.8264 0.920833 13.0596 0.970799 12.3581 1.26261C11.6565 1.55442 11.0542 2.07399 10.6324 2.75105C10.2107 3.42812 9.98993 4.23001 10 5.04827V5.93995C8.56215 5.98058 7.13741 5.63305 5.85264 4.92829C4.56788 4.22354 3.46299 3.18345 2.63636 1.90065C2.63636 1.90065 -0.636364 9.92575 6.72727 13.4925C5.04225 14.739 3.03495 15.364 1 15.2758C8.36364 19.7342 17.3636 15.2758 17.3636 5.02152C17.3629 4.77315 17.341 4.52539 17.2982 4.28143C18.1332 3.38395 18.7225 2.25082 19 1.00897Z"
-                                  stroke="#54595F" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round" />
-                            </svg>
-                         </a>
-                         <a href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                               xmlns="http://www.w3.org/2000/svg">
-                               <path
-                                  d="M13 1H5C2.79086 1 1 2.79086 1 5V13C1 15.2091 2.79086 17 5 17H13C15.2091 17 17 15.2091 17 13V5C17 2.79086 15.2091 1 13 1Z"
-                                  stroke="#54595F" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round" />
-                               <path
-                                  d="M12.1999 8.496C12.2986 9.16179 12.1849 9.84177 11.8749 10.4392C11.5649 11.0366 11.0744 11.5211 10.4732 11.8237C9.87195 12.1263 9.19062 12.2317 8.52609 12.1247C7.86156 12.0178 7.24767 11.7041 6.77173 11.2281C6.2958 10.7522 5.98205 10.1383 5.87512 9.47377C5.76819 8.80924 5.87352 8.12791 6.17612 7.5267C6.47873 6.92548 6.96321 6.43499 7.56065 6.12499C8.15809 5.81499 8.83807 5.70127 9.50386 5.8C10.183 5.9007 10.8117 6.21717 11.2972 6.70264C11.7827 7.18812 12.0992 7.81686 12.1999 8.496Z"
-                                  stroke="#54595F" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round" />
-                               <path d="M13.3999 4.6001H13.4079" stroke="#54595F" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+            <div class="swiper rr-category-slider">
 
-                         </a>
-                         <a href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                               xmlns="http://www.w3.org/2000/svg">
-                               <path
-                                  d="M12.1999 6.05273C13.4729 6.05273 14.6938 6.58506 15.594 7.53262C16.4942 8.48017 16.9999 9.76532 16.9999 11.1054V17.0001H13.7999V11.1054C13.7999 10.6587 13.6313 10.2303 13.3313 9.91445C13.0312 9.5986 12.6242 9.42116 12.1999 9.42116C11.7756 9.42116 11.3686 9.5986 11.0685 9.91445C10.7685 10.2303 10.5999 10.6587 10.5999 11.1054V17.0001H7.3999V11.1054C7.3999 9.76532 7.90562 8.48017 8.80579 7.53262C9.70596 6.58506 10.9269 6.05273 12.1999 6.05273Z"
-                                  stroke="#54595F" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round" />
-                               <path d="M4.2 6.89478H1V17H4.2V6.89478Z" stroke="#54595F" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                               <path
-                                  d="M2.6 4.36842C3.48366 4.36842 4.2 3.61437 4.2 2.68421C4.2 1.75405 3.48366 1 2.6 1C1.71634 1 1 1.75405 1 2.68421C1 3.61437 1.71634 4.36842 2.6 4.36842Z"
-                                  stroke="#54595F" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round" />
-                            </svg>
-                         </a>
-                      </div>
-                   </div>
-                </div>
-             </div>
-             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 wow rrfadeUp mb-30" data-wow-duration=".9s"
-                data-wow-delay=".5s">
-                <div class="rr-team-2-item text-center p-relative">
-                   <div class="rr-team-2-thumb">
-                      <img src="assets/img/team/team-5.jpg" alt="">
-                   </div>
-                   <div class="rr-team-2-content">
-                      <h4 class="rr-team-2-title"><a href="team-details.html">Jeremy Erickson</a></h4>
-                      <span>Photographer </span>
-                      <div class="rr-team-2-social">
-                         <a href="#"><svg width="11" height="18" viewBox="0 0 11 18" fill="none"
-                               xmlns="http://www.w3.org/2000/svg">
-                               <path
-                                  d="M10 1H7.54545C6.46048 1 5.41994 1.42143 4.65274 2.17157C3.88555 2.92172 3.45455 3.93913 3.45455 5V7.4H1V10.6H3.45455V17H6.72727V10.6H9.18182L10 7.4H6.72727V5C6.72727 4.78783 6.81347 4.58434 6.96691 4.43431C7.12035 4.28429 7.32846 4.2 7.54545 4.2H10V1Z"
-                                  stroke="#54595F" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round" />
-                            </svg>
-                         </a>
-                         <a href="#"><svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                               xmlns="http://www.w3.org/2000/svg">
-                               <path
-                                  d="M19 1.00897C18.2165 1.61128 17.349 2.07195 16.4309 2.37324C15.9382 1.75576 15.2833 1.3181 14.5548 1.11947C13.8264 0.920833 13.0596 0.970799 12.3581 1.26261C11.6565 1.55442 11.0542 2.07399 10.6324 2.75105C10.2107 3.42812 9.98993 4.23001 10 5.04827V5.93995C8.56215 5.98058 7.13741 5.63305 5.85264 4.92829C4.56788 4.22354 3.46299 3.18345 2.63636 1.90065C2.63636 1.90065 -0.636364 9.92575 6.72727 13.4925C5.04225 14.739 3.03495 15.364 1 15.2758C8.36364 19.7342 17.3636 15.2758 17.3636 5.02152C17.3629 4.77315 17.341 4.52539 17.2982 4.28143C18.1332 3.38395 18.7225 2.25082 19 1.00897Z"
-                                  stroke="#54595F" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round" />
-                            </svg>
-                         </a>
-                         <a href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                               xmlns="http://www.w3.org/2000/svg">
-                               <path
-                                  d="M13 1H5C2.79086 1 1 2.79086 1 5V13C1 15.2091 2.79086 17 5 17H13C15.2091 17 17 15.2091 17 13V5C17 2.79086 15.2091 1 13 1Z"
-                                  stroke="#54595F" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round" />
-                               <path
-                                  d="M12.1999 8.496C12.2986 9.16179 12.1849 9.84177 11.8749 10.4392C11.5649 11.0366 11.0744 11.5211 10.4732 11.8237C9.87195 12.1263 9.19062 12.2317 8.52609 12.1247C7.86156 12.0178 7.24767 11.7041 6.77173 11.2281C6.2958 10.7522 5.98205 10.1383 5.87512 9.47377C5.76819 8.80924 5.87352 8.12791 6.17612 7.5267C6.47873 6.92548 6.96321 6.43499 7.56065 6.12499C8.15809 5.81499 8.83807 5.70127 9.50386 5.8C10.183 5.9007 10.8117 6.21717 11.2972 6.70264C11.7827 7.18812 12.0992 7.81686 12.1999 8.496Z"
-                                  stroke="#54595F" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round" />
-                               <path d="M13.3999 4.6001H13.4079" stroke="#54595F" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+               <div class="swiper-wrapper">
+                  @foreach ($categories as $categorie)
+                     <div class="swiper-slide">
+                        <div class="rr-team-2-item text-center p-relative" 
+                           style="position: relative; background: url('{{ asset('storage/' . $categorie->first_photo) }}') no-repeat center center / cover; border-radius: 20px; overflow: hidden; min-height: 500px;">
 
-                         </a>
-                         <a href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                               xmlns="http://www.w3.org/2000/svg">
-                               <path
-                                  d="M12.1999 6.05273C13.4729 6.05273 14.6938 6.58506 15.594 7.53262C16.4942 8.48017 16.9999 9.76532 16.9999 11.1054V17.0001H13.7999V11.1054C13.7999 10.6587 13.6313 10.2303 13.3313 9.91445C13.0312 9.5986 12.6242 9.42116 12.1999 9.42116C11.7756 9.42116 11.3686 9.5986 11.0685 9.91445C10.7685 10.2303 10.5999 10.6587 10.5999 11.1054V17.0001H7.3999V11.1054C7.3999 9.76532 7.90562 8.48017 8.80579 7.53262C9.70596 6.58506 10.9269 6.05273 12.1999 6.05273Z"
-                                  stroke="#54595F" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round" />
-                               <path d="M4.2 6.89478H1V17H4.2V6.89478Z" stroke="#54595F" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                               <path
-                                  d="M2.6 4.36842C3.48366 4.36842 4.2 3.61437 4.2 2.68421C4.2 1.75405 3.48366 1 2.6 1C1.71634 1 1 1.75405 1 2.68421C1 3.61437 1.71634 4.36842 2.6 4.36842Z"
-                                  stroke="#54595F" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round" />
-                            </svg>
-                         </a>
-                      </div>
-                   </div>
-                </div>
-             </div>
-             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 wow rrfadeUp mb-30" data-wow-duration=".9s"
-                data-wow-delay=".7s">
-                <div class="rr-team-2-item text-center p-relative">
-                   <div class="rr-team-2-thumb">
-                      <img src="assets/img/team/team-6.jpg" alt="">
-                   </div>
-                   <div class="rr-team-2-content">
-                      <h4 class="rr-team-2-title"><a href="team-details.html">Rodger Garza</a></h4>
-                      <span>Wedding Planner</span>
-                      <div class="rr-team-2-social">
-                         <a href="#"><svg width="11" height="18" viewBox="0 0 11 18" fill="none"
-                               xmlns="http://www.w3.org/2000/svg">
-                               <path
-                                  d="M10 1H7.54545C6.46048 1 5.41994 1.42143 4.65274 2.17157C3.88555 2.92172 3.45455 3.93913 3.45455 5V7.4H1V10.6H3.45455V17H6.72727V10.6H9.18182L10 7.4H6.72727V5C6.72727 4.78783 6.81347 4.58434 6.96691 4.43431C7.12035 4.28429 7.32846 4.2 7.54545 4.2H10V1Z"
-                                  stroke="#54595F" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round" />
-                            </svg>
-                         </a>
-                         <a href="#"><svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                               xmlns="http://www.w3.org/2000/svg">
-                               <path
-                                  d="M19 1.00897C18.2165 1.61128 17.349 2.07195 16.4309 2.37324C15.9382 1.75576 15.2833 1.3181 14.5548 1.11947C13.8264 0.920833 13.0596 0.970799 12.3581 1.26261C11.6565 1.55442 11.0542 2.07399 10.6324 2.75105C10.2107 3.42812 9.98993 4.23001 10 5.04827V5.93995C8.56215 5.98058 7.13741 5.63305 5.85264 4.92829C4.56788 4.22354 3.46299 3.18345 2.63636 1.90065C2.63636 1.90065 -0.636364 9.92575 6.72727 13.4925C5.04225 14.739 3.03495 15.364 1 15.2758C8.36364 19.7342 17.3636 15.2758 17.3636 5.02152C17.3629 4.77315 17.341 4.52539 17.2982 4.28143C18.1332 3.38395 18.7225 2.25082 19 1.00897Z"
-                                  stroke="#54595F" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round" />
-                            </svg>
-                         </a>
-                         <a href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                               xmlns="http://www.w3.org/2000/svg">
-                               <path
-                                  d="M13 1H5C2.79086 1 1 2.79086 1 5V13C1 15.2091 2.79086 17 5 17H13C15.2091 17 17 15.2091 17 13V5C17 2.79086 15.2091 1 13 1Z"
-                                  stroke="#54595F" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round" />
-                               <path
-                                  d="M12.1999 8.496C12.2986 9.16179 12.1849 9.84177 11.8749 10.4392C11.5649 11.0366 11.0744 11.5211 10.4732 11.8237C9.87195 12.1263 9.19062 12.2317 8.52609 12.1247C7.86156 12.0178 7.24767 11.7041 6.77173 11.2281C6.2958 10.7522 5.98205 10.1383 5.87512 9.47377C5.76819 8.80924 5.87352 8.12791 6.17612 7.5267C6.47873 6.92548 6.96321 6.43499 7.56065 6.12499C8.15809 5.81499 8.83807 5.70127 9.50386 5.8C10.183 5.9007 10.8117 6.21717 11.2972 6.70264C11.7827 7.18812 12.0992 7.81686 12.1999 8.496Z"
-                                  stroke="#54595F" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round" />
-                               <path d="M13.3999 4.6001H13.4079" stroke="#54595F" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                           <!-- Transparent overlay to darken/fade background -->
+                           <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+                                       background-color: rgba(0, 0, 0, 0.3); z-index: 1;">
+                           </div>
 
-                         </a>
-                         <a href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                               xmlns="http://www.w3.org/2000/svg">
-                               <path
-                                  d="M12.1999 6.05273C13.4729 6.05273 14.6938 6.58506 15.594 7.53262C16.4942 8.48017 16.9999 9.76532 16.9999 11.1054V17.0001H13.7999V11.1054C13.7999 10.6587 13.6313 10.2303 13.3313 9.91445C13.0312 9.5986 12.6242 9.42116 12.1999 9.42116C11.7756 9.42116 11.3686 9.5986 11.0685 9.91445C10.7685 10.2303 10.5999 10.6587 10.5999 11.1054V17.0001H7.3999V11.1054C7.3999 9.76532 7.90562 8.48017 8.80579 7.53262C9.70596 6.58506 10.9269 6.05273 12.1999 6.05273Z"
-                                  stroke="#54595F" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round" />
-                               <path d="M4.2 6.89478H1V17H4.2V6.89478Z" stroke="#54595F" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                               <path
-                                  d="M2.6 4.36842C3.48366 4.36842 4.2 3.61437 4.2 2.68421C4.2 1.75405 3.48366 1 2.6 1C1.71634 1 1 1.75405 1 2.68421C1 3.61437 1.71634 4.36842 2.6 4.36842Z"
-                                  stroke="#54595F" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round" />
-                            </svg>
-                         </a>
-                      </div>
-                   </div>
+                           <!-- Phone image in foreground -->
+                           {{-- Phone Mockup Background --}}
+                           <img src="{{ asset('storage/' . $categorie->secound_photo) }}" 
+                              alt="Mockup Frame"
+                              style="width: 100%; position: relative; z-index: 2;left: 110px;top: 66px;">
+
+                           {{-- Inserted App Screenshot or Category Image (inside phone screen) --}}
+                           <img src="{{ asset('storage/' . $categorie->background_photo) }}" 
+                              alt="Inside Screenshot"
+                              style="position: absolute; top: 25px; left: 22px; width: 205px; height: 440px; object-fit: cover; border-radius: 28px; z-index: 1;">
+                           
+                           <!-- Text content -->
+                           <div class="rr-team-2-content" 
+                              style="position: relative; z-index: 2; background: rgba(255, 255, 255, 0.85); margin: 20px; padding: 20px; border-radius: 12px;top: 40px;">
+                              <h4 class="rr-team-2-title" style="color: #333;">
+                                 {{ $categorie->localized_name }}
+                              </h4>
+                              
+                              @if(!empty($categorie->price))
+                                 <p class="mt-2 fw-bold" style="color: #000;">Price: {{ $categorie->price }} ֏</p>
+                              @endif
+
+                              <div class="rr-team-2-social mt-3">
+                                 <!-- You can keep your social icons here -->
+                              </div>
+                               <!-- ✅ Action Buttons -->
+                              <div class="d-flex justify-content-center gap-3 mt-3">
+                                 <a href="" class="btn btn-primary" style="padding: 6px 14px; font-size: 14px;">
+                                    View All
+                                 </a>
+                                 <a href="" class="btn btn-success" style="padding: 6px 14px; font-size: 14px;">
+                                    Order
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  @endforeach
+               </div>
+               <!-- Navigation Arrows (optional) -->
+               <div class="swiper-button-next"></div>
+               <div class="swiper-button-prev"></div>
+           </div>
+           
                 </div>
              </div>
           </div>
        </div>
-    </section> --}}
-    <style>
-   .phone-mockup-wrapper {
-    position: relative;
-    width: 260px;
-    margin: auto;
-   }
-
-.phone-frame {
-    position: relative;
-    width: 100%;
-    height: 520px;
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.phone-screen {
-    position: absolute;
-    top: 60px;
-    left: 15px;
-    width: 230px;
-    height: 400px;
-    overflow: hidden;
-    border-radius: 20px;
-}
-
-.phone-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.iphone-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-}
-
-    </style>
-    
-    <section class="category-section pt-110 pb-90">
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-xl-12 text-center mb-40">
-                  <h3 class="section-title">Wedding and Engagement</h3>
-                  <p class="section-subtitle">The most precious moments begin with an invitation.</p>
-                  <a href="#" class="btn btn-outline-danger mt-2">SELECT INVITATION</a>
-              </div>
-          </div>
-  
-          <div class="row justify-content-center">
-              @foreach($categories as $category)
-                  @php
-                      $defaultTemplate = $category->templates->first(); // 🟢 Get default or first template
-                  @endphp
-  
-                  @if($defaultTemplate)
-                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30 text-center">
-                      <div class="phone-mockup-wrapper">
-                          <div class="phone-frame">
-                              <div class="phone-screen">
-                                  <img src="{{ asset('storage/' . $defaultTemplate->photo) }}" alt="{{ $category->name_en }}" class="img-fluid phone-image">
-                              </div>
-                              <img src="https://staging.whiteorangesoftware.com/metrix/assets/images/screenshort/iphone_cover.png" class="iphone-overlay" alt="iPhone Frame" />
-                          </div>
-                          <h5 class="mt-3">{{ app()->getLocale() == 'hy' ? $category->name_hy : $category->name_en }}</h5>
-                      </div>
-                  </div>
-                  @endif
-              @endforeach
-          </div>
-      </div>
-  </section>
+    </section>
+    <script>
+      const swiper = new Swiper('.rr-category-slider', {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          loop: true,
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+          breakpoints: {
+              992: {
+                  slidesPerView: 3,
+              },
+              768: {
+                  slidesPerView: 2,
+              },
+              0: {
+                  slidesPerView: 1,
+              }
+          }
+      });
+  </script>
   
     <!-- team-2 area end -->
     <!-- rr-testimonial-single-single area start -->

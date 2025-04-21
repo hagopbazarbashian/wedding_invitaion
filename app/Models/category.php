@@ -13,7 +13,7 @@ class category extends Model
     public function getLocalizedNameAttribute() 
     {
         $language = session('app_locale', 'en');  
-        return $language === 'am' ? $this->name_am : $this->name_en;
+        return $language === 'hy' ? $this->name_am : $this->name_en;
     }
 
     // Each category has many templates
