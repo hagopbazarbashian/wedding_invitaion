@@ -587,7 +587,7 @@
         <script type="text/javascript" src="{{asset('weedingpartone/js/main.js')}}"></script> 
     </body> 
     <!-- Order Now Modal -->
-<div id="orderNowModal" class="modal fade" tabindex="-1" aria-hidden="true">
+{{-- <div id="orderNowModal" class="modal fade" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content text-center p-4">
         <h4 class="mb-3">Պատվիրեք հիմա</h4>
@@ -606,5 +606,5 @@
             sessionStorage.setItem('orderModalShown', 'true');
         }
     });
-</script>
+</script> --}}
 </html>

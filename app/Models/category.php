@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class category extends Model
 {
-    protected $fillable = ['photo', 'name_en','name_am']; 
+    protected $fillable = ['photo', 'name_en','name_am','background_photo','first_photo' , 'secound_photo']; 
 
 
     public function getLocalizedNameAttribute() 
@@ -17,7 +17,7 @@ class category extends Model
     }
 
     // Each category has many templates
-    public function templates()
+    public function templates()  
     {
         return $this->hasMany(TemplateAll::class, 'category_id');
     }

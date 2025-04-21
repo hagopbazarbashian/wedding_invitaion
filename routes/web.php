@@ -30,7 +30,7 @@ use App\Http\Controllers\Template\TemplateSyetemController;
 */
 
 Route::get('/' , [WelcomePageController::class , 'index'])->name('welcome_page');
-
+Route::get('/lang/{lang}', [WelcomePageController::class, 'switchLanguage'])->name('switchLanguage'); 
 
 
 // Admin System

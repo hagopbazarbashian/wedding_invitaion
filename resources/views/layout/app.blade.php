@@ -39,6 +39,11 @@
          </svg>
       </button>
    </div>
+
+   {{-- Lang system  --}}
+    @include('lang-system')
+   {{-- Lang system End  --}}
+   
    <!-- back to top end -->
    @include('layout.nav-bar')
 

@@ -10,12 +10,14 @@ class TemplateAll extends Model
     protected $fillable = [ 
         'category_id',
         'photo',
-        'value'     
+        'value' ,
+        'live_url'    
     ];  
 
-    // Each template belongs to one category
+    // Each template belongs to one category 
     public function category()
     {
         return $this->belongsTo(Category::class, 'category_id');
+        
     }
 }

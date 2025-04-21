@@ -26,6 +26,18 @@
                                 <label class="form-label" for="photo">Photo</label>
                                 <input type="file" class="form-control" name="photo" id="photo">
                             </div>
+                            <div class="col-md-12 mb-3">
+                                <label class="form-label" for="photo">Background Photo</label>
+                                <input type="file" class="form-control" name="background_photo" id="photo">
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label class="form-label" for="photo">first Photo</label>
+                                <input type="file" class="form-control" name="first_photo" id="photo">
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label class="form-label" for="photo">Second  Photo</label>
+                                <input type="file" class="form-control" name="secound_photo" id="photo">
+                            </div>
                         </div>
                         <div>
                             <button class="btn btn-primary" type="submit">Ստեղծել</button>

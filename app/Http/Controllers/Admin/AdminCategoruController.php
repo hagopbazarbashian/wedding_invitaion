@@ -13,7 +13,7 @@ class AdminCategoruController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index()    
     {
         $categorys = category::get();
          return view('admin.category.index',compact('categorys'));
@@ -38,20 +38,27 @@ class AdminCategoruController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name_en' => 'required|string|max:255',
-            'name_am' => 'required|string|max:255',
-            'photo'   => 'nullable',
+            'name_en'         => 'required|string|max:255',
+            'name_am'         => 'required|string|max:255',
+            'photo'           => 'nullable|image|mimes:jpeg,png,jpg,webp',
+            'background_photo'=> 'nullable|image|mimes:jpeg,png,jpg,webp',
+            'first_photo'     => 'nullable|image|mimes:jpeg,png,jpg,webp',
+            'secound_photo'   => 'nullable|image|mimes:jpeg,png,jpg,webp',
         ]);
 
-        $photoPath = null;
-        if ($request->hasFile('photo')) {
-            $photoPath = $request->file('photo')->store('category', 'public');
-        }
+        // Store uploaded files if present
+        $photoPath           = $request->hasFile('photo')            ? $request->file('photo')->store('category', 'public')           : null;
+        $backgroundPhotoPath = $request->hasFile('background_photo') ? $request->file('background_photo')->store('category', 'public') : null;
+        $firstPhotoPath      = $request->hasFile('first_photo')      ? $request->file('first_photo')->store('category', 'public')      : null;
+        $secoundPhotoPath    = $request->hasFile('secound_photo')    ? $request->file('secound_photo')->store('category', 'public')    : null;
 
         category::create([
-            'name_en' => $request->name_en,
-            'name_am' => $request->name_am,
-            'photo'   => $photoPath,
+            'name_en'          => $request->name_en,
+            'name_am'          => $request->name_am,
+            'photo'            => $photoPath,
+            'background_photo' => $backgroundPhotoPath,
+            'first_photo'      => $firstPhotoPath,
+            'secound_photo'    => $secoundPhotoPath,
         ]);
 
         return redirect()->back()->with('success', 'Service part created successfully.');

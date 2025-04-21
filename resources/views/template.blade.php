@@ -1,3 +1,4 @@
+
 <section class="project-gallery-mobile pt-0">
     <div class="container">
        <div class="text-center mb-25">
@@ -13,7 +14,11 @@
              <div class="swiper-slide">
                <div class="phone-slide-wrapper">
                   <div class="phone-mockup">
-                     <img src="{{ asset('storage/' . $TemplateAll->photo) }}" class="mockup-screen" alt="Screen 1" />
+                     {{-- <img src="{{ asset('storage/' . $TemplateAll->photo) }}" class="mockup-screen" alt="Screen 1" /> --}}
+                     <div class="mockup-screen">
+                        <img src="{{ asset('storage/' . $TemplateAll->photo) }}" class="scrolling-image" alt="Mockup Scroll" />
+                    </div>
+                     {{-- <iframe src="{{ $TemplateAll->live_url }}" class="mockup-screen live-preview"></iframe> --}}
                      <img src="https://staging.whiteorangesoftware.com/metrix/assets/images/screenshort/iphone_cover.png" class="mockup-frame" alt="iPhone Frame" />
                   </div>
                </div>
@@ -24,42 +29,6 @@
               
             </div>
              @endforeach
- 
-             {{-- <div class="swiper-slide">
-                <div class="phone-slide-wrapper">
-                   <div class="phone-mockup">
-                      <img src="https://staging.whiteorangesoftware.com/metrix/assets/images/screenshort/02.png" class="mockup-screen" alt="Screen 2" />
-                      <img src="https://staging.whiteorangesoftware.com/metrix/assets/images/screenshort/iphone_cover.png" class="mockup-frame" alt="iPhone Frame" />
-                   </div>
-                </div>
-             </div> --}}
- 
-             {{-- <div class="swiper-slide">
-                <div class="phone-slide-wrapper">
-                   <div class="phone-mockup">
-                      <img src="https://staging.whiteorangesoftware.com/metrix/assets/images/screenshort/03.png" class="mockup-screen" alt="Screen 3" />
-                      <img src="https://staging.whiteorangesoftware.com/metrix/assets/images/screenshort/iphone_cover.png" class="mockup-frame" alt="iPhone Frame" />
-                   </div>
-                </div>
-             </div> --}}
- 
-             {{-- <div class="swiper-slide">
-                <div class="phone-slide-wrapper">
-                   <div class="phone-mockup">
-                      <img src="https://staging.whiteorangesoftware.com/metrix/assets/images/screenshort/04.png" class="mockup-screen" alt="Screen 4" />
-                      <img src="https://staging.whiteorangesoftware.com/metrix/assets/images/screenshort/iphone_cover.png" class="mockup-frame" alt="iPhone Frame" />
-                   </div>
-                </div>
-             </div> --}}
- 
-             {{-- <div class="swiper-slide">
-                <div class="phone-slide-wrapper">
-                   <div class="phone-mockup">
-                      <img src="https://staging.whiteorangesoftware.com/metrix/assets/images/screenshort/05.png" class="mockup-screen" alt="Screen 5" />
-                      <img src="https://staging.whiteorangesoftware.com/metrix/assets/images/screenshort/iphone_cover.png" class="mockup-frame" alt="iPhone Frame" />
-                   </div>
-                </div>
-             </div> --}}
           </div>
  
           <!-- Pagination & Navigation -->
@@ -71,6 +40,60 @@
  </section>
  
  <style>
+
+.mockup-actions {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 3;
+}
+
+.mockup-actions a {
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+
+   .mockup-wrapper {
+    position: relative;
+    width: 280px;
+    height: 570px;
+    margin: auto;
+}
+
+.mockup-screen {
+    position: absolute;
+    top: 66px;   /* adjust to match screen cutout */
+    left: 16px;
+    width: 248px;
+    height: 438px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.scrolling-image {
+    width: 100%;
+    position: relative;
+    animation: scrollImage 6s linear infinite; /* was 15s or more */
+}
+
+@keyframes scrollImage {
+    0%   { top: 0; }
+    100% { top: -100%; } /* scrolls entire image upward */
+}
+
+.phone-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
 .mockup-actions {
     position: absolute;
     bottom: 6%;
@@ -181,6 +204,23 @@
           margin-top: 10px;
        }
     }
+
+    .live-preview {
+      width: 100%;
+      height: 100%;
+      border: none;
+      pointer-events: none; /* Prevent interaction */
+      overflow: hidden;
+   }
+
+      @keyframes autoScroll {
+         0% { transform: translateY(0); }
+         100% { transform: translateY(-50%); }
+      }
+
+      .phone-mockup iframe {
+         animation: autoScroll 10s linear infinite;
+      }
  </style>
  
  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -212,4 +252,23 @@
        });
     });
  </script>
- 
+ <script>
+   document.addEventListener("DOMContentLoaded", function () {
+       const iframes = document.querySelectorAll('.live-preview');
+       iframes.forEach(iframe => {
+           iframe.onload = function () {
+               let scrollY = 0;
+
+               // Increase scroll amount per interval for faster effect
+               const scrollInterval = setInterval(() => {
+                   scrollY += 3; // 🔥 increase from 1 to 3 (you can go higher if needed)
+                   try {
+                       iframe.contentWindow.scrollTo(0, scrollY);
+                   } catch (e) {
+                       clearInterval(scrollInterval); // Stop if CORS blocks it
+                   }
+               }, 50); // Lower interval means faster updates
+           };
+       });
+   });
+</script>

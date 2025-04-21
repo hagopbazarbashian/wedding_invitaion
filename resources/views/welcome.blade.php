@@ -131,7 +131,7 @@
     </section>
     <!-- about-3 03 area end -->
     <!-- fact area start -->
-    <div class="rr-funfact-2-area pb-85 p-relative fix">
+    <div class="rr-funfact-2-area pb-85 p-relative fix" style="margin: 65px 0 0 0;">
        <div class="container">
           <div class="rr-funfact-2">
              <div class="row gx-30">
@@ -221,7 +221,7 @@
     </div>
     <!-- fact area end -->
     <!-- team-2 area start -->
-    <section class="rr-team-2-area rr-team-bg-color pt-110 pb-90 p-relative fix"
+    {{-- <section class="rr-team-2-area rr-team-bg-color pt-110 pb-90 p-relative fix"
        data-background="assets/img/team/bg.jpg">
        <div class="container">
           <div class="row">
@@ -414,7 +414,85 @@
              </div>
           </div>
        </div>
-    </section>
+    </section> --}}
+    <style>
+   .phone-mockup-wrapper {
+    position: relative;
+    width: 260px;
+    margin: auto;
+   }
+
+.phone-frame {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.phone-screen {
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    width: 230px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.phone-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.iphone-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+    </style>
+    
+    <section class="category-section pt-110 pb-90">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-xl-12 text-center mb-40">
+                  <h3 class="section-title">Wedding and Engagement</h3>
+                  <p class="section-subtitle">The most precious moments begin with an invitation.</p>
+                  <a href="#" class="btn btn-outline-danger mt-2">SELECT INVITATION</a>
+              </div>
+          </div>
+  
+          <div class="row justify-content-center">
+              @foreach($categories as $category)
+                  @php
+                      $defaultTemplate = $category->templates->first(); // 🟢 Get default or first template
+                  @endphp
+  
+                  @if($defaultTemplate)
+                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30 text-center">
+                      <div class="phone-mockup-wrapper">
+                          <div class="phone-frame">
+                              <div class="phone-screen">
+                                  <img src="{{ asset('storage/' . $defaultTemplate->photo) }}" alt="{{ $category->name_en }}" class="img-fluid phone-image">
+                              </div>
+                              <img src="https://staging.whiteorangesoftware.com/metrix/assets/images/screenshort/iphone_cover.png" class="iphone-overlay" alt="iPhone Frame" />
+                          </div>
+                          <h5 class="mt-3">{{ app()->getLocale() == 'hy' ? $category->name_hy : $category->name_en }}</h5>
+                      </div>
+                  </div>
+                  @endif
+              @endforeach
+          </div>
+      </div>
+  </section>
+  
     <!-- team-2 area end -->
     <!-- rr-testimonial-single-single area start -->
     <div class="rr-testimonial-single-area pt-100  gray-bg fix">
