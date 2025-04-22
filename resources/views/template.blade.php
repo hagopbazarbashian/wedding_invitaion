@@ -2,8 +2,8 @@
 <section class="project-gallery-mobile pt-0">
     <div class="container">
        <div class="text-center mb-25">
-          <span class="section-subtitle">Our Projects</span>
-          <h3 class="section-title">Our Amazing Work</h3>
+          <span class="section-subtitle">{{$language['Our_Projects']}}</span>
+          <h3 class="section-title">{{$language['Our_Amazing_Work']}}</h3>
        </div>
  
        <!-- Swiper Slider -->
@@ -40,6 +40,15 @@
  </section>
  
  <style>
+  @media (max-width: 768px) {
+   .mockup-actions .btn {
+      font-size: 9px !important;
+      padding: 4px 10px !important;
+      border-radius: 20px !important;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+   }
+}
+
 
 .mockup-actions {
     position: absolute;

@@ -554,6 +554,9 @@
             </div>
         </section>
         <!-- end section -->
+         {{-- Show palce Order --}}
+         @include('place-your-order')
+        {{-- Show palce Order --}}
         <!-- start section -->
         <footer class="bg-gradient-porcelain-grey position-relative xs-pt-50px xs-pb-50px">
             <div class="position-absolute left-0px top-minus-50px lg-top-minus-25px sm-top-minus-20px xs-top-minus-15px background-position-left-top w-100 h-100px lg-h-60px md-h-50px background-size-100 background-no-repeat" style="background-image: url('images/demo-wedding-invitation-home-effect-02.png')"></div>
@@ -586,25 +589,4 @@
         <script type="text/javascript" src="{{asset('weedingpartone/js/vendors.min.js')}}"></script> 
         <script type="text/javascript" src="{{asset('weedingpartone/js/main.js')}}"></script> 
     </body> 
-    <!-- Order Now Modal -->
-{{-- <div id="orderNowModal" class="modal fade" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content text-center p-4">
-        <h4 class="mb-3">Պատվիրեք հիմա</h4>
-        <p>Պատրա՞ստ եք ամրագրել ձեր երազանքի հարսանեկան դիզայնը:</p>
-        <a href="/order" class="btn btn-primary">Շարունակեք պատվիրել</a>
-        <button type="button" class="btn btn-secondary mt-2" data-bs-dismiss="modal">Փակել</button>
-      </div>
-    </div>
-  </div>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Show modal only on first visit (per session)
-        if (!sessionStorage.getItem('orderModalShown')) {
-            const orderModal = new bootstrap.Modal(document.getElementById('orderNowModal'));
-            orderModal.show();
-            sessionStorage.setItem('orderModalShown', 'true');
-        }
-    });
-</script> --}}
 </html>

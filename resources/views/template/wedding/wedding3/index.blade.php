@@ -28,7 +28,6 @@
 </head>
 
 <body>
-
     <!-- start page-wrapper -->
     <div class="page-wrap">
         <!-- start preloader -->
@@ -39,7 +38,7 @@
                     <div class="loader-line-mask">
                         <div class="loader-line"></div>
                     </div>
-                    <img src="assets/images/preloader.png" alt="">
+                    <img src="{{asset('weedingpartone/wedding2/assets/images/preloader.png')}}" alt="">
                 </div>
             </div>
         </div>
@@ -62,8 +61,7 @@
                             </div>
                             <div class="col-lg-2 col-md-6 col-6">
                                 <div class="navbar-header">
-                                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.svg"
-                                            alt=""></a>
+                                    <a class="navbar-brand" href="index.html"><img src="{{asset('weedingpartone/wedding2/assets/images/logo.svg')}}" alt="{{asset('weedingpartone/wedding2/assets/images/logo.svg')}}"></a>
                                 </div>
                             </div>
                             <div class="col-lg-8 col-md-1 col-1">
@@ -277,7 +275,7 @@
                         <div class="row align-items-center">
                             <div class="col col-xl-3 col-sm-6 col-lg-3 col-12 order-lg-1 order-1">
                                 <div class="static-hero-img wow fadeInLeftSlow" data-wow-duration="1500ms">
-                                    <img src="assets/images/slider/hero-1.jpg" alt="">
+                                    <img src="https://wpocean.com/html/tf/sukun/assets/images/slider/hero-1.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col col-xl-6 col-lg-6 col-md-8 col-12 order-lg-2 order-3">
@@ -295,14 +293,14 @@
                                         <div class="clearfix"></div>
                                     </div>
                                     <div class="shape wow fadeInLeftSlow" data-wow-duration="2500ms"><img
-                                            src="assets/images/slider/left-shape-1.png" alt=""></div>
+                                            src="{{asset('weedingpartone/wedding2/assets/images/slider/left-shape-1.png')}}" alt=""></div>
                                     <div class="shape2 wow fadeInRightSlow" data-wow-duration="2500ms"><img
-                                            src="assets/images/slider/left-shape-2.png" alt=""></div>
+                                            src="{{asset('weedingpartone/wedding2/assets/images/slider/left-shape-2.png')}}" alt=""></div>
                                 </div>
                             </div>
                             <div class="col col-xl-3 col-lg-3 col-sm-6 col-12 order-lg-3 order-2">
                                 <div class="static-hero-img wow fadeInRightSlow" data-wow-duration="1500ms">
-                                    <img src="assets/images/slider/hero-2.jpg" alt="">
+                                    <img src="https://wpocean.com/html/tf/sukun/assets/images/slider/hero-2.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -332,11 +330,11 @@
                             <div class="col col-lg-5 col-12">
                                 <div class="couple-item">
                                     <div class="couple-img">
-                                        <img src="assets/images/couple/couple-img-3.jpg" alt="">
+                                        <img src="https://wpocean.com/html/tf/sukun/assets/images/couple/couple-img-3.jpg" alt="">
                                     </div>
                                     <div class="couple-text">
                                         <div class="couple-text-inner">
-                                            <i><img src="assets/images/couple/bride2.svg" alt=""></i>
+                                            <i><img src="{{asset('weedingpartone/wedding2/assets/images/couple/bride2.svg')}}" alt=""></i>
                                             <h3>Esabella Bell</h3>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna orci auctor
                                                 vitae nisl. fringilla pellesque amet tempus.</p>
@@ -352,16 +350,16 @@
                                 </div>
                             </div>
                             <div class="col-lg-2">
-                                <div class="love-shape"><img src="assets/images/couple/heart-shape.png" alt=""></div>
+                                <div class="love-shape"><img src="{{asset('weedingpartone/wedding2/assets/images/couple/heart-shape.png')}}" alt=""></div>
                             </div>
                             <div class="col col-lg-5 col-12">
                                 <div class="couple-item">
                                     <div class="couple-img">
-                                        <img src="assets/images/couple/couple-img-4.jpg" alt="">
+                                        <img src="https://wpocean.com/html/tf/sukun/assets/images/couple/couple-img-4.jpg" alt="">
                                     </div>
                                     <div class="couple-text">
                                         <div class="couple-text-inner">
-                                            <i><img src="assets/images/couple/groom2.svg" alt=""></i>
+                                            <i><img src="{{asset('weedingpartone/wedding2/assets/images/couple/groom2.svg')}}" alt=""></i>
                                             <h3>William Max</h3>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna orci auctor
                                                 vitae nisl. fringilla pellesque amet tempus.</p>
@@ -397,19 +395,19 @@
                         <div class="row">
                             <div class="col col-lg-6 col-12">
                                 <div class="wpo-story-img">
-                                    <img src="assets/images/story/story-4.jpg" alt="">
+                                    <img src="https://wpocean.com/html/tf/sukun/assets/images/story/story-4.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col col-lg-6 col-12">
                                 <div class="wpo-story-content">
-                                    <i><img src="assets/images/story/f-shape-1.png" alt=""></i>
+                                    <i><img src="{{asset('weedingpartone/wedding2/assets/images/story/f-shape-1.png')}}" alt=""></i>
                                     <h2>First Time We Meet</h2>
                                     <span>12 Feb 2016</span>
                                     <p>Lorem ipsum dolor sit amet, constetur kiy adicng elit. Ultricies nulla mi tempus
                                         mcorper for praesent. Ultricies interdum hy volutpat morbi nam ornare neque elit
                                         leo, diam. Malesuada enim ac amurna tempor asr btyrfgvel duis.</p>
-                                    <i><img src="assets/images/story/f-shape-2.png" alt=""></i>
-                                    <div class="top-shape"><img src="assets/images/story/tassel.png" alt=""></div>
+                                    <i><img src="{{asset('weedingpartone/wedding2/assets/images/story/f-shape-2.png')}}" alt=""></i>
+                                    <div class="top-shape"><img src="{{asset('weedingpartone/wedding2/assets/images/story/tassel.png')}}" alt=""></div>
                                 </div>
                             </div>
                         </div>
@@ -418,19 +416,19 @@
                         <div class="row">
                             <div class="col col-lg-6 col-12">
                                 <div class="wpo-story-img">
-                                    <img src="assets/images/story/story-5.jpg" alt="">
+                                    <img src="https://wpocean.com/html/tf/sukun/assets/images/story/story-5.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col col-lg-6 col-12">
                                 <div class="wpo-story-content">
-                                    <i><img src="assets/images/story/f-shape-1.png" alt=""></i>
+                                    <i><img src="{{asset('weedingpartone/wedding2/assets/images/story/f-shape-1.png')}}" alt=""></i>
                                     <h2>Our First Date</h2>
                                     <span>25 Mar 2017</span>
                                     <p>Lorem ipsum dolor sit amet, constetur kiy adicng elit. Ultricies nulla mi tempus
                                         mcorper for praesent. Ultricies interdum hy volutpat morbi nam ornare neque elit
                                         leo, diam. Malesuada enim ac amurna tempor asr btyrfgvel duis.</p>
-                                    <i><img src="assets/images/story/f-shape-2.png" alt=""></i>
-                                    <div class="top-shape"><img src="assets/images/story/tassel.png" alt=""></div>
+                                    <i><img src="{{asset('weedingpartone/wedding2/assets/images/story/f-shape-2.png')}}" alt=""></i>
+                                    <div class="top-shape"><img src="{{asset('weedingpartone/wedding2/assets/images/story/tassel.png')}}" alt=""></div>
                                 </div>
                             </div>
                         </div>
@@ -439,19 +437,19 @@
                         <div class="row">
                             <div class="col col-lg-6 col-12">
                                 <div class="wpo-story-img">
-                                    <img src="assets/images/story/story-6.jpg" alt="">
+                                    <img src="https://wpocean.com/html/tf/sukun/assets/images/story/story-6.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col col-lg-6 col-12">
                                 <div class="wpo-story-content">
-                                    <i><img src="assets/images/story/f-shape-1.png" alt=""></i>
+                                    <i><img src="{{asset('weedingpartone/wedding2/assets/images/story/f-shape-1.png')}}" alt=""></i>
                                     <h2>She Said Yes!</h2>
                                     <span>18 Sep 2020</span>
                                     <p>Lorem ipsum dolor sit amet, constetur kiy adicng elit. Ultricies nulla mi tempus
                                         mcorper for praesent. Ultricies interdum hy volutpat morbi nam ornare neque elit
                                         leo, diam. Malesuada enim ac amurna tempor asr btyrfgvel duis.</p>
-                                    <i><img src="assets/images/story/f-shape-2.png" alt=""></i>
-                                    <div class="top-shape"><img src="assets/images/story/tassel.png" alt=""></div>
+                                    <i><img src="{{asset('weedingpartone/wedding2/assets/images/story/f-shape-2.png')}}" alt=""></i>
+                                    <div class="top-shape"><img src="{{asset('weedingpartone/wedding2/assets/images/story/tassel.png')}}" alt=""></div>
                                 </div>
                             </div>
                         </div>
@@ -460,12 +458,12 @@
             </div> <!-- end container -->
             <div class="flower-shape-1">
                 <div class="flower-sticky">
-                    <img src="assets/images/story/shape3.png" alt="">
+                    <img src="{{asset('weedingpartone/wedding2/assets/images/story/shape3.png')}}" alt="">
                 </div>
             </div>
             <div class="flower-shape-2">
                 <div class="flower-sticky">
-                    <img src="assets/images/story/shape4.png" alt="">
+                    <img src="{{asset('weedingpartone/wedding2/assets/images/story/shape4.png')}}" alt="">
                 </div>
             </div>
         </section>
@@ -489,72 +487,72 @@
                             <div class="portfolio-grids clearfix">
                                 <div class="grid">
                                     <div class="img-holder">
-                                        <a href="assets/images/portfolio/9.jpg" class="fancybox"
+                                        <a href="https://wpocean.com/html/tf/sukun/assets/images/portfolio/9.jpg" class="fancybox"
                                             data-fancybox-group="gall-1">
-                                            <img src="assets/images/portfolio/9.jpg" alt class="img img-responsive">
+                                            <img src="https://wpocean.com/html/tf/sukun/assets/images/portfolio/9.jpg" alt class="img img-responsive">
                                             <div class="hover-content">
                                                 <i class="ti-plus"></i>
                                             </div>
                                         </a>
                                     </div>
                                     <div class="clothespin">
-                                        <img src="assets/images/portfolio/clothespin.png" alt="">
+                                        <img src="{{asset('weedingpartone/wedding2/assets/images/portfolio/clothespin.png')}}" alt="">
                                     </div>
                                 </div>
                                 <div class="grid">
                                     <div class="img-holder">
-                                        <a href="assets/images/portfolio/10.jpg" class="fancybox"
+                                        <a href="https://wpocean.com/html/tf/sukun/assets/images/portfolio/10.jpg" class="fancybox"
                                             data-fancybox-group="gall-1">
-                                            <img src="assets/images/portfolio/10.jpg" alt class="img img-responsive">
+                                            <img src="https://wpocean.com/html/tf/sukun/assets/images/portfolio/10.jpg" alt class="img img-responsive">
                                             <div class="hover-content">
                                                 <i class="ti-plus"></i>
                                             </div>
                                         </a>
                                     </div>
                                     <div class="clothespin">
-                                        <img src="assets/images/portfolio/clothespin.png" alt="">
+                                        <img src="{{asset('weedingpartone/wedding2/assets/images/portfolio/clothespin.png')}}" alt="">
                                     </div>
                                 </div>
                                 <div class="grid">
                                     <div class="img-holder">
-                                        <a href="assets/images/portfolio/11.jpg" class="fancybox"
+                                        <a href="https://wpocean.com/html/tf/sukun/assets/images/portfolio/12.jpg" class="fancybox"
                                             data-fancybox-group="gall-1">
-                                            <img src="assets/images/portfolio/11.jpg" alt class="img img-responsive">
+                                            <img src="https://wpocean.com/html/tf/sukun/assets/images/portfolio/12.jpg" alt class="img img-responsive">
                                             <div class="hover-content">
                                                 <i class="ti-plus"></i>
                                             </div>
                                         </a>
                                     </div>
                                     <div class="clothespin">
-                                        <img src="assets/images/portfolio/clothespin.png" alt="">
+                                        <img src="{{asset('weedingpartone/wedding2/assets/images/portfolio/clothespin.png')}}" alt="">
                                     </div>
                                 </div>
                                 <div class="grid">
                                     <div class="img-holder">
-                                        <a href="assets/images/portfolio/12.jpg" class="fancybox"
+                                        <a href="https://wpocean.com/html/tf/sukun/assets/images/portfolio/12.jpg" class="fancybox"
                                             data-fancybox-group="gall-1">
-                                            <img src="assets/images/portfolio/12.jpg" alt class="img img-responsive">
+                                            <img src="https://wpocean.com/html/tf/sukun/assets/images/portfolio/11.jpg" alt class="img img-responsive">
                                             <div class="hover-content">
                                                 <i class="ti-plus"></i>
                                             </div>
                                         </a>
                                     </div>
                                     <div class="clothespin">
-                                        <img src="assets/images/portfolio/clothespin.png" alt="">
+                                        <img src="{{asset('weedingpartone/wedding2/assets/images/portfolio/clothespin.png')}}" alt="">
                                     </div>
                                 </div>
                                 <div class="grid">
                                     <div class="img-holder">
-                                        <a href="assets/images/portfolio/13.jpg" class="fancybox"
+                                        <a href="https://wpocean.com/html/tf/sukun/assets/images/portfolio/12.jpg" class="fancybox"
                                             data-fancybox-group="gall-1">
-                                            <img src="assets/images/portfolio/13.jpg" alt class="img img-responsive">
+                                            <img src="https://wpocean.com/html/tf/sukun/assets/images/portfolio/12.jpg" alt class="img img-responsive">
                                             <div class="hover-content">
                                                 <i class="ti-plus"></i>
                                             </div>
                                         </a>
                                     </div>
                                     <div class="clothespin">
-                                        <img src="assets/images/portfolio/clothespin.png" alt="">
+                                        <img src="{{asset('weedingpartone/wedding2/assets/images/portfolio/clothespin.png')}}" alt="">
                                     </div>
                                 </div>
                                 <div class="grid full">
@@ -568,72 +566,72 @@
                                 </div>
                                 <div class="grid">
                                     <div class="img-holder">
-                                        <a href="assets/images/portfolio/14.jpg" class="fancybox"
+                                        <a href="https://wpocean.com/html/tf/sukun/assets/images/portfolio/12.jpg" class="fancybox"
                                             data-fancybox-group="gall-1">
-                                            <img src="assets/images/portfolio/14.jpg" alt class="img img-responsive">
+                                            <img src="https://wpocean.com/html/tf/sukun/assets/images/portfolio/12.jpg" alt class="img img-responsive">
                                             <div class="hover-content">
                                                 <i class="ti-plus"></i>
                                             </div>
                                         </a>
                                     </div>
                                     <div class="clothespin">
-                                        <img src="assets/images/portfolio/clothespin.png" alt="">
+                                        <img src="{{asset('weedingpartone/wedding2/assets/images/portfolio/clothespin.png')}}" alt="">
                                     </div>
                                 </div>
                                 <div class="grid">
                                     <div class="img-holder">
-                                        <a href="assets/images/portfolio/15.jpg" class="fancybox"
+                                        <a href="https://wpocean.com/html/tf/sukun/assets/images/portfolio/12.jpg" class="fancybox"
                                             data-fancybox-group="gall-1">
-                                            <img src="assets/images/portfolio/15.jpg" alt class="img img-responsive">
+                                            <img src="https://wpocean.com/html/tf/sukun/assets/images/portfolio/12.jpg" alt class="img img-responsive">
                                             <div class="hover-content">
                                                 <i class="ti-plus"></i>
                                             </div>
                                         </a>
                                     </div>
                                     <div class="clothespin">
-                                        <img src="assets/images/portfolio/clothespin.png" alt="">
+                                        <img src="{{asset('weedingpartone/wedding2/assets/images/portfolio/clothespin.png')}}" alt="">
                                     </div>
                                 </div>
                                 <div class="grid">
                                     <div class="img-holder">
-                                        <a href="assets/images/portfolio/16.jpg" class="fancybox"
+                                        <a href="https://wpocean.com/html/tf/sukun/assets/images/portfolio/12.jpg" class="fancybox"
                                             data-fancybox-group="gall-1">
-                                            <img src="assets/images/portfolio/16.jpg" alt class="img img-responsive">
+                                            <img src="https://wpocean.com/html/tf/sukun/assets/images/portfolio/12.jpg" alt class="img img-responsive">
                                             <div class="hover-content">
                                                 <i class="ti-plus"></i>
                                             </div>
                                         </a>
                                     </div>
                                     <div class="clothespin">
-                                        <img src="assets/images/portfolio/clothespin.png" alt="">
+                                        <img src="{{asset('weedingpartone/wedding2/assets/images/portfolio/clothespin.png')}}" alt="">
                                     </div>
                                 </div>
                                 <div class="grid">
                                     <div class="img-holder">
-                                        <a href="assets/images/portfolio/17.jpg" class="fancybox"
+                                        <a href="https://wpocean.com/html/tf/sukun/assets/images/portfolio/12.jpg" class="fancybox"
                                             data-fancybox-group="gall-1">
-                                            <img src="assets/images/portfolio/17.jpg" alt class="img img-responsive">
+                                            <img src="https://wpocean.com/html/tf/sukun/assets/images/portfolio/12.jpg" alt class="img img-responsive">
                                             <div class="hover-content">
                                                 <i class="ti-plus"></i>
                                             </div>
                                         </a>
                                     </div>
                                     <div class="clothespin">
-                                        <img src="assets/images/portfolio/clothespin.png" alt="">
+                                        <img src="{{asset('weedingpartone/wedding2/assets/images/portfolio/clothespin.png')}}" alt="">
                                     </div>
                                 </div>
                                 <div class="grid">
                                     <div class="img-holder">
-                                        <a href="assets/images/portfolio/18.jpg" class="fancybox"
+                                        <a href="https://wpocean.com/html/tf/sukun/assets/images/portfolio/12.jpg" class="fancybox"
                                             data-fancybox-group="gall-1">
-                                            <img src="assets/images/portfolio/18.jpg" alt class="img img-responsive">
+                                            <img src="https://wpocean.com/html/tf/sukun/assets/images/portfolio/12.jpg" alt class="img img-responsive">
                                             <div class="hover-content">
                                                 <i class="ti-plus"></i>
                                             </div>
                                         </a>
                                     </div>
                                     <div class="clothespin">
-                                        <img src="assets/images/portfolio/clothespin.png" alt="">
+                                        <img src="{{asset('weedingpartone/wedding2/assets/images/portfolio/clothespin.pn')}}g" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -711,12 +709,12 @@
                         </div>
                     </div>
                     <div class="back-shape">
-                        <img src="assets/images/rsvp/rsvp-bg.png" alt="">
+                        <img src="{{asset('weedingpartone/wedding2/assets/images/rsvp/rsvp-bg.png')}}" alt="">
                     </div>
                     <div class="shape-1 wow fadeInLeftSlow" data-wow-duration="2000ms"><img
-                            src="assets/images/rsvp/left-shape2.png" alt=""></div>
+                            src="{{asset('weedingpartone/wedding2/assets/images/rsvp/left-shape2.png')}}" alt=""></div>
                     <div class="shape-2 wow fadeInRightSlow" data-wow-duration="2000ms"><img
-                            src="assets/images/rsvp/right-shape2.png" alt=""></div>
+                            src="{{asset('weedingpartone/wedding2/assets/images/rsvp/right-shape2.png')}}" alt=""></div>
                 </div>
             </div>
             <div class="bottom-text marquee2">
@@ -741,7 +739,7 @@
                         <div class="wpo-event-inner">
                             <div class="wpo-event-item">
                                 <div class="wpo-event-text">
-                                    <i><img src="assets/images/icon/1.svg" alt=""></i>
+                                    <i><img src="{{asset('weedingpartone/wedding2/assets/images/icon/1.svg')}}" alt=""></i>
                                     <span>Welcome Drinks</span>
                                 </div>
                                 <div class="wpo-event-time">
@@ -750,7 +748,7 @@
                             </div>
                             <div class="wpo-event-item">
                                 <div class="wpo-event-text">
-                                    <i><img src="assets/images/icon/2.svg" alt=""></i>
+                                    <i><img src="{{asset('weedingpartone/wedding2/assets/images/icon/2.svg')}}" alt=""></i>
                                     <span>Ceremony</span>
                                 </div>
                                 <div class="wpo-event-time">
@@ -759,7 +757,7 @@
                             </div>
                             <div class="wpo-event-item">
                                 <div class="wpo-event-text">
-                                    <i><img src="assets/images/icon/3.svg" alt=""></i>
+                                    <i><img src="{{asset('weedingpartone/wedding2/assets/images/icon/3.svg')}}" alt=""></i>
                                     <span>Party Photos</span>
                                 </div>
                                 <div class="wpo-event-time">
@@ -768,7 +766,7 @@
                             </div>
                             <div class="wpo-event-item">
                                 <div class="wpo-event-text">
-                                    <i><img src="assets/images/icon/4.svg" alt=""></i>
+                                    <i><img src="{{asset('weedingpartone/wedding2/assets/images/icon/4.svg')}}" alt=""></i>
                                     <span>Dinner</span>
                                 </div>
                                 <div class="wpo-event-time">
@@ -777,7 +775,7 @@
                             </div>
                             <div class="wpo-event-item">
                                 <div class="wpo-event-text">
-                                    <i><img src="assets/images/icon/5.svg" alt=""></i>
+                                    <i><img src="{{asset('weedingpartone/wedding2/assets/images/icon/5.svg')}}" alt=""></i>
                                     <span>Cake Cutting</span>
                                 </div>
                                 <div class="wpo-event-time">
@@ -786,7 +784,7 @@
                             </div>
                             <div class="wpo-event-item">
                                 <div class="wpo-event-text">
-                                    <i><img src="assets/images/icon/6.svg" alt=""></i>
+                                    <i><img src="{{asset('weedingpartone/wedding2/assets/images/icon/6.svg')}}" alt=""></i>
                                     <span>First Dance</span>
                                 </div>
                                 <div class="wpo-event-time">
@@ -795,7 +793,7 @@
                             </div>
                             <div class="wpo-event-item">
                                 <div class="wpo-event-text">
-                                    <i><img src="assets/images/icon/7.svg" alt=""></i>
+                                    <i><img src="{{asset('weedingpartone/wedding2/assets/images/icon/7.svg')}}" alt=""></i>
                                     <span>Depart</span>
                                 </div>
                                 <div class="wpo-event-time">
@@ -823,7 +821,7 @@
                         <div class="col col-lg-4 col-md-6 col-12">
                             <div class="wpo-blog-item wow fadeInUp" data-wow-duration="1000ms">
                                 <div class="wpo-blog-img">
-                                    <img src="assets/images/blog/img-1.jpg" alt="">
+                                    <img src="https://wpocean.com/html/tf/sukun/assets/images/blog/img-1.jpg" alt="">
                                 </div>
                                 <div class="wpo-blog-content">
                                     <ul>
@@ -837,7 +835,7 @@
                         <div class="col col-lg-4 col-md-6 col-12">
                             <div class="wpo-blog-item wow fadeInUp" data-wow-duration="1200ms">
                                 <div class="wpo-blog-img">
-                                    <img src="assets/images/blog/img-2.jpg" alt="">
+                                    <img src="https://wpocean.com/html/tf/sukun/assets/images/blog/img-2.jpg" alt="">
                                 </div>
                                 <div class="wpo-blog-content">
                                     <ul>
@@ -851,7 +849,7 @@
                         <div class="col col-lg-4 col-md-6 col-12">
                             <div class="wpo-blog-item wow fadeInUp" data-wow-duration="1400ms">
                                 <div class="wpo-blog-img">
-                                    <img src="assets/images/blog/img-3.jpg" alt="">
+                                    <img src="https://wpocean.com/html/tf/sukun/assets/images/blog/img-3.jpg" alt="">
                                 </div>
                                 <div class="wpo-blog-content">
                                     <ul>
@@ -876,19 +874,19 @@
                     <div class="col col-xs-12">
                         <div class="partner-grids partners-slider owl-carousel">
                             <div class="grid">
-                                <img src="assets/images/partners/1.png" alt>
+                                <img src="{{asset('weedingpartone/wedding2/assets/images/partners/1.png')}}" alt>
                             </div>
                             <div class="grid">
-                                <img src="assets/images/partners/2.png" alt>
+                                <img src="{{asset('weedingpartone/wedding2/assets/images/partners/2.png')}}" alt>
                             </div>
                             <div class="grid">
-                                <img src="assets/images/partners/3.png" alt>
+                                <img src="{{asset('weedingpartone/wedding2/assets/images/partners/3.png')}}" alt>
                             </div>
                             <div class="grid">
-                                <img src="assets/images/partners/4.png" alt>
+                                <img src="{{asset('weedingpartone/wedding2/assets/images/partners/4.png')}}" alt>
                             </div>
                             <div class="grid">
-                                <img src="assets/images/partners/5.png" alt>
+                                <img src="{{asset('weedingpartone/wedding2/assets/images/partners/5.png')}}" alt>
                             </div>
                         </div>
                     </div>
@@ -923,7 +921,7 @@
                         <div class="col col-xl-6 col-lg-4 col-md-6 col-sm-12 col-12">
                             <div class="widget about-widget">
                                 <div class="logo widget-title">
-                                    <a class="logo" href="index.html"><img src="assets/images/logo-2.svg" alt=""></a>
+                                    <a class="logo" href="index.html"><img src="{{asset('weedingpartone/wedding2/assets/images/logo-2.svg')}}" alt=""></a>
                                 </div>
                                 <p>We can’t wait to see all of our beloved friends
                                     and relative s at our wedding.</p>
@@ -977,6 +975,11 @@
 
     </div>
     <!-- end of page-wrapper -->
+    
+    {{-- Show palce Order --}}
+    @include('place-your-order')
+    {{-- Show palce Order --}}
+
 
     <!-- All JavaScript files
     ================================================== -->

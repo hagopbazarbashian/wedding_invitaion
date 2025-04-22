@@ -22,6 +22,14 @@ class TemplateSyetemController extends Controller
          if($value == 'wedding_3'){
             return view('template.wedding.wedding3.index');
          }
+
+         if($value == 'wedding_4'){
+            return view('template.wedding.wedding4.index');
+         }
+
+         if($value == 'wedding_5'){
+            return view('template.wedding.wedding5.index');
+         }
         
      }
 }

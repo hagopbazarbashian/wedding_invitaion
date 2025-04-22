@@ -97,38 +97,89 @@
   
     <!-- project-slider area end -->
     <!-- about-3 03 area start -->
-    <section class="rr-about-3-area pb-90 pt-70 fix">
-       <div class="container">
-          <div class="row">
-             <div class="col-xl-6 col-lg-6 col-md-6 wow rrfadeLeft" data-wow-duration=".9s" data-wow-delay=".5s">
-                <div class="rr-about-3-thumb">
-                   <img src="assets/img/about/img-sm.jpg" alt="">
-                </div>
-             </div>
-             <div class="col-xl-6 col-lg-6 col-md-6">
-                <div class="rr-about-title-wrapper mt-140 ml-40">
-                   <span class="rr-section-subtitle wow rrfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">About
-                      Brulloft</span>
-                   <h3 class="rr-section-title pb-15 wow rrfadeUp" data-wow-duration=".9s" data-wow-delay=".5s"> We
-                      Will Make Your Dream
-                      Wedding A Reality</h3>
-                   <div class="rr-section-main mb-40 wow rrfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
-                      <p>It is a long established fact that a reader will be distracted by the <br /> readable content
-                         of a page when looking at its layout. The point of <br /> using Lorem Ipsum is that it has a
-                         more-or-less normal distribution <br /> of letters, as opposed to using</p>
-                      <p>Content here, content here', making it look like readable English. <br /> Many desktop
-                         publishing packages and web page editors now use <br /> Lorem Ipsum as their default model
-                         text.</p>
-                   </div>
-                   <div class=" wow rrfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
-                      <a href="about.html" class="rr-btn-2"><span>More
-                            About Us <i class="fa-sharp fa-solid fa-arrow-right"></i></span></a>
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
-    </section>
+   <!-- Font Awesome CDN -->
+
+
+      <section class="py-5 bg-white">
+         <div class="container">
+            <div class="row align-items-center">
+                  <!-- Left: Device Preview Image -->
+                  
+                  <div class="col-xl-6 col-lg-6 col-md-6 wow rrfadeLeft" data-wow-duration=".9s" data-wow-delay=".5s">
+                     <div class="rr-about-3-thumb">
+                        <img src="{{asset('assets/img/Minimalist Website Launch Computer Mockup Instagram Post.png')}}" alt="">
+                     </div>
+                  </div>
+
+                  <!-- Right: Content -->
+                  <div class="col-md-6">
+                     <h2 class="fw-bold">{{$language['Why_Choose_an_E_Invitation']}}</h2>
+                     <p class="mb-4">{{$language['Advantages_over_paper_invitations']}}</p>
+
+                     <div class="row g-4">
+                        <!-- Feature 1 -->
+                        <div class="col-6 d-flex align-items-start">
+                              <i class="fas fa-globe fa-2x text-secondary me-3 mt-1"></i>
+                              <div>
+                                 <h6 class="fw-bold">{{$language['Unlimited_Access']}}</h6>
+                                 <p class="small mb-0">{{$language['Send_unlimited']}}</p>
+                              </div>
+                        </div>
+
+                        <!-- Feature 2 -->
+                        <div class="col-6 d-flex align-items-start">
+                              <i class="fas fa-tablet-alt fa-2x text-secondary me-3 mt-1"></i>
+                              <div>
+                                 <h6 class="fw-bold">{{$language['Convenience']}}</h6>
+                                 <p class="small mb-0">{{$language['Accessible']}}</p>
+                              </div>
+                        </div>
+
+                        <!-- Feature 3 -->
+                        <div class="col-6 d-flex align-items-start">
+                              <i class="fas fa-wallet fa-2x text-secondary me-3 mt-1"></i>
+                              <div>
+                                 <h6 class="fw-bold">{{$language['Save_Money']}}</h6>
+                                 <p class="small mb-0">{{$language['Save_up']}}</p>
+                              </div>
+                        </div>
+
+                        <!-- Feature 4 -->
+                        <div class="col-6 d-flex align-items-start">
+                              <i class="fas fa-clock fa-2x text-secondary me-3 mt-1"></i>
+                              <div>
+                                 <h6 class="fw-bold">{{$language['Time_Efficient']}}</h6>
+                                 <p class="small mb-0">{{$language['Ready']}}</p>
+                              </div>
+                        </div>
+
+                        <!-- Feature 5 -->
+                        <div class="col-6 d-flex align-items-start">
+                              <i class="fas fa-leaf fa-2x text-secondary me-3 mt-1"></i>
+                              <div>
+                                 <h6 class="fw-bold">{{$language['Eco_Friendly']}}</h6>
+                                 <p class="small mb-0">{{$language['No_paper']}}</p>
+                              </div>
+                        </div>
+
+                        <!-- Feature 6 -->
+                        <div class="col-6 d-flex align-items-start">
+                              <i class="fas fa-comments fa-2x text-secondary me-3 mt-1"></i>
+                              <div>
+                                 <h6 class="fw-bold">{{$language['Feedback_Ready']}}</h6>
+                                 <p class="small mb-0">{{$language['See_all_RSVP']}}</p>
+                              </div>
+                        </div>
+                     </div>
+
+                     <div class="mt-4 text-center">
+                        <p class="fw-bold">{{$language['limits_of_time']}}</p>
+                     </div>
+                  </div>
+            </div>
+         </div>
+      </section>
+
     <!-- about-3 03 area end -->
     <!-- fact area start -->
     <div class="rr-funfact-2-area pb-85 p-relative fix" style="margin: 65px 0 0 0;">
